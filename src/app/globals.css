@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .container {
+    @apply max-w-5xl w-full px-4 lg:px-0 m-auto
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .button {
+    @apply bg-red-700 cursor-pointer text-white rounded-lg w-full transition-all duration-500 hover:opacity-70
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.mask-banner {
+  -webkit-mask-image: url('/images/mask.svg');
+  mask-image: url('/images/mask.svg');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  min-height: 100vh;
+}
+
+@media(min-width:1500px) {
+  .mask-banner {
+    height: 100vh;
+  }
 }
