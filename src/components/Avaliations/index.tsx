@@ -5,7 +5,7 @@ import { FaClock, FaPlus, FaStar } from "react-icons/fa";
 export function Avaliations() {
     return (
         <>
-            <div className="container py-16 flex flex-col lg:flex-row justify-between">
+            <div id="avaliations" className="container py-16 flex flex-col lg:flex-row justify-between">
                 <div className="flex flex-col gap-10">
                     <h2 className="font-bold text-3xl">What Are The <br /> Customers Saying <br /> About Us</h2>
                     <div className="flex">

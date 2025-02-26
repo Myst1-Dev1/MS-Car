@@ -1,34 +1,33 @@
 import Image from "next/image";
 import { FaChair, FaCog, FaGasPump, FaSearch } from "react-icons/fa";
 
-
 export function BookCar() {
     return (
         <>
-            <div className="container py-16">
+            <div id="car" className="container py-16">
                 <h2 className="text-center text-3xl font-bold">Regular Car <br /> Book Your Suitable Car</h2>
-                <div className="mt-10 p-3 border border-gray-300 shadow-md flex justify-between">
-                    <div className="flex gap-10">
-                        <div className="flex flex-col gap-1 border-r border-gray-300 pr-6">
+                <div className="mt-10 p-3 border border-gray-300 shadow-md flex lg:flex-row flex-col gap-5 lg:gap-0 justify-between">
+                    <div className="flex lg:flex-row flex-col gap-10">
+                        <div className="flex flex-col gap-1 border-none lg:border-r border-gray-300 pr-0 lg:pr-6">
                             <label className="text-gray-500" htmlFor="location">Location</label>
-                            <select className="p-2 w-60 bg-gray-100 text-black rounded-md outline-none">
+                            <select className="p-2 w-full lg:w-60 bg-gray-100 text-black rounded-md outline-none">
                                 <option value="Bangladesh">Bangladesh</option>
                             </select>
                         </div>
-                        <div className="flex flex-col gap-1 border-r border-gray-300 pr-6">
+                        <div className="flex flex-col gap-1 border-none lg:border-r border-gray-300 pr-0 lg:pr-6">
                             <label className="text-gray-500" htmlFor="category">Category</label>
-                            <select className="p-2 w-40 bg-gray-100 text-black rounded-md outline-none">
+                            <select className="p-2 w-full lg:w-40 bg-gray-100 text-black rounded-md outline-none">
                                 <option value="category">All</option>
                             </select>
                         </div>
                         <div className="flex flex-col gap-1">
                             <label className="text-gray-500" htmlFor="price">Price Range</label>
-                            <select className="p-2 w-60 bg-gray-100 text-black rounded-md outline-none">
+                            <select className="p-2 w-full lg:w-60 bg-gray-100 text-black rounded-md outline-none">
                                 <option value="price">$40.00 - $60.00</option>
                             </select>
                         </div>
                     </div>
-                    <button className="button max-w-40 flex justify-center gap-3 items-center"><FaSearch /> Search</button>
+                    <button className="flex-shrink-0 button max-w-40 flex p-3 justify-center gap-3 items-center"><FaSearch /> Search</button>
                 </div>
 
                 <div className="mt-16 flex justify-between items-center gap-5 flex-wrap m-auto">

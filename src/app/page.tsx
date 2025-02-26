@@ -6,6 +6,7 @@ import { Offer } from "@/components/Offer";
 import { RentalWorks } from "@/components/RentalWorks";
 
 export default function Home() {
+
   return (
     <>
       <Banner />
